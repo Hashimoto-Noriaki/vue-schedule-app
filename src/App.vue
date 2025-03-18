@@ -10,12 +10,11 @@
 </script>
 
 <style scoped>
-/* v-container を中央寄せ */
 .center {
   display: flex;
-  justify-content: center; /* 横方向の中央 */
-  align-items: center; /* 縦方向の中央 */
-  height: 100vh; /* 画面の高さ全体を使用 */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   color:limegreen;
 }
 
