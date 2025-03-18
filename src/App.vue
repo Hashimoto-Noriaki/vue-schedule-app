@@ -1,30 +1,27 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <v-app>
+    <v-container class="center">
+      <h1 class="title">Hello Vuetify!</h1>
+    </v-container>
+  </v-app>
 </template>
 
+<script setup lang="ts">
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* v-container を中央寄せ */
+.center {
+  display: flex;
+  justify-content: center; /* 横方向の中央 */
+  align-items: center; /* 縦方向の中央 */
+  height: 100vh; /* 画面の高さ全体を使用 */
+  color:limegreen;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 </style>
